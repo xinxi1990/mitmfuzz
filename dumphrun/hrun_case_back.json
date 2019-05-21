@@ -1,0 +1,498 @@
+[
+    {
+        "config": {
+            "name": "testcase description",
+            "variables": {}
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea",
+                "method": "POST",
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "327",
+                    "Host": "dedao.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "struct_id": 25490,
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558452493",
+                        "s": "db578eef9d289db9",
+                        "seid": "1fdab2a5fa99e1edda214151eefc27d2"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea",
+                "method": "POST",
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "327",
+                    "Host": "dedao.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "struct_id": 25490,
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558452493",
+                        "s": "db578eef9d289db9",
+                        "seid": "1fdab2a5fa99e1edda214151eefc27d2"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea",
+                "method": "POST",
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "327",
+                    "Host": "dedao.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "struct_id": 25490,
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558452493",
+                        "s": "db578eef9d289db9",
+                        "seid": "1fdab2a5fa99e1edda214151eefc27d2"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea",
+                "method": "POST",
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "327",
+                    "Host": "dedao.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "struct_id": 25490,
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558452493",
+                        "s": "db578eef9d289db9",
+                        "seid": "1fdab2a5fa99e1edda214151eefc27d2"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea",
+                "method": "POST",
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "327",
+                    "Host": "dedao.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "struct_id": 25490,
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558452493",
+                        "s": "db578eef9d289db9",
+                        "seid": "1fdab2a5fa99e1edda214151eefc27d2"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea",
+                "method": "POST",
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "327",
+                    "Host": "dedao.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "struct_id": 25490,
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558452493",
+                        "s": "db578eef9d289db9",
+                        "seid": "1fdab2a5fa99e1edda214151eefc27d2"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea",
+                "method": "POST",
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "327",
+                    "Host": "dedao.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "struct_id": 25490,
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558452493",
+                        "s": "db578eef9d289db9",
+                        "seid": "1fdab2a5fa99e1edda214151eefc27d2"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea",
+                "method": "POST",
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "327",
+                    "Host": "dedao.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "struct_id": 25490,
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558452493",
+                        "s": "db578eef9d289db9",
+                        "seid": "1fdab2a5fa99e1edda214151eefc27d2"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea",
+                "method": "POST",
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "327",
+                    "Host": "dedao.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "struct_id": 25490,
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558452493",
+                        "s": "db578eef9d289db9",
+                        "seid": "1fdab2a5fa99e1edda214151eefc27d2"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea",
+                "method": "POST",
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "327",
+                    "Host": "dedao.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "struct_id": 25490,
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558452493",
+                        "s": "db578eef9d289db9",
+                        "seid": "1fdab2a5fa99e1edda214151eefc27d2"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    }
+]

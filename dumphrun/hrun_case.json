@@ -1,0 +1,3086 @@
+[
+    {
+        "config": {
+            "name": "testcase description",
+            "variables": {}
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "test": {
+            "name": "casname",
+            "request": {
+                "url": "http://entree.dev.igetget.com/centerproducer/v1/audio/actionpost",
+                "method": "POST",
+                "headers": {
+                    "X-App-Key": "android-6.2.0",
+                    "X-Uid": "84846274",
+                    "X-Thumb": "l",
+                    "X-Dt": "phone",
+                    "X-Ov": "6.0",
+                    "X-Net": "WIFI",
+                    "X-Os": "ANDROID",
+                    "X-D": "ae244834553d4eda",
+                    "X-Dv": "Samsung Galaxy S6",
+                    "X-T": "json",
+                    "X-Chil": "0",
+                    "X-V": "2",
+                    "X-Av": "6.2.0",
+                    "X-Scr": "2.0",
+                    "X-Adv": "1",
+                    "X-Seid": "22eb3b6b029be45d7cd5c7e00c14f3a4",
+                    "X-Hitdot": "",
+                    "G-Auth-Sign": "ZGVkMzlmYTQ3NmZjNjljYzBhMTljZjU3MGUwNDRlYWM=",
+                    "G-Auth-Nonce": "0aff699f73941686bf82e8807b386bfe",
+                    "G-Auth-Ts": "1558453643",
+                    "G-Auth-Appid": "5a27d122ee4638163f594393",
+                    "G-Auth-Token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNTgwNjUsImlhdCI6MTU1ODQ1MzI2NSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0NTMyNjUsInN1YiI6Ijg0ODQ2Mjc0In0.J_xlp1L4eCwiUfo8DVjKTRIcbNPIgtoUUJ2iDs3gB2EJDFo_qYcG8l1ZunlvXyYIpLMAEkA4ZyyxvtK1i6S-eQ",
+                    "Content-Type": "application/json; charset=UTF-8",
+                    "Content-Length": "463",
+                    "Host": "entree.dev.igetget.com",
+                    "Connection": "Keep-Alive",
+                    "Accept-Encoding": "gzip",
+                    "User-Agent": "okhttp/3.11.0"
+                },
+                "json": {
+                    "type": "audio",
+                    "data": [
+                        {
+                            "action": "pause",
+                            "alias_id": "vAkdmo4jroFNvu263tkH",
+                            "progress": 39.05,
+                            "reason": "",
+                            "time": 1558453643,
+                            "type": "audio",
+                            "uid": 84846274
+                        }
+                    ],
+                    "h": {
+                        "u": "84846274",
+                        "thumb": "l",
+                        "dt": "phone",
+                        "ov": "6.0",
+                        "net": "WIFI",
+                        "os": "ANDROID",
+                        "d": "ae244834553d4eda",
+                        "dv": "Samsung Galaxy S6",
+                        "t": "json",
+                        "chil": "0",
+                        "v": "2",
+                        "av": "6.2.0",
+                        "scr": "2.0",
+                        "adv": "1",
+                        "X-Dv": "Samsung Galaxy S6",
+                        "ts": "1558453643",
+                        "s": "db578eef9d289db9",
+                        "seid": "22eb3b6b029be45d7cd5c7e00c14f3a4"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        }
+    }
+]

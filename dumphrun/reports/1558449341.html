@@ -1,0 +1,5166 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      line-height: 20px;
+      text-align: left;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      line-height: 25px;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+    .popup .separator {
+      color:royalblue
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2019-05-21 22:35:41</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">1.359 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 2.0.6 </td>
+      <td>CPython 2.7.15 </td>
+      <td colspan="2">Darwin-17.7.0-x86_64-i386-64bit</td>
+    </tr>
+    <tr>
+      <th>STAT</th>
+      <th colspan="2">TESTCASES (success/fail)</th>
+      <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+      <td>total (details) =></td>
+      <td colspan="2">1 (0/1)</td>
+      <td colspan="2">22 (0/0/22/0)</td>
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>testcase description</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <td>TOTAL: 22</td>
+      <td>SUCCESS: 0</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 22</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_1_1">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_1_1">log-1</a>
+        <div id="popup_log_1_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Origin</strong>: https://danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 96
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bsajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22%24device_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_b53ede02df3afea0608038748f4c9f36=1558447058; Hm_lpvt_b53ede02df3afea0608038748f4c9f36=1558447058; _ga=GA1.2.1345612320.1558447058; _gid=GA1.2.1911237309.1558447058; _gat_gtag_UA_16079156_7=1; channel=1300100158; device_id=web_SkBY2KW6N; timestamp=1558449280491; xq_a_token=74786f77ecd18ab50a3555fc5e450228202d5232)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Content-Type'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bapplication/json;charset=UTF-8)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://danjuanapp.com/my-money?channel=1300100158&refer=xq_trade)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>json</th>
+                      <td>
+                        
+                          {}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://danjuanapp.com/service/register-with-xq
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_1">traceback</a>
+          <div id="popup_attachment_1_1" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_1">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://danjuanapp.com/my-money?channel=1300100158&amp;refer=xq_trade)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_2">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_2_1">log-1</a>
+        <div id="popup_log_1_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bvisited=1; u=6175430818; xq_a_token=ea501de4478bd19fa60edc1c520508952f50080f; sajssdk_2015_cross_new_user=1; _gat_gtag_UA_16079156_5=1; _ga=GA1.2.323633486.1558447058; _gid=GA1.2.519265043.1558447058; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22%24device_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_71442e351f6dfe17879c9d58a122655b=1558447061; Hm_lpvt_71442e351f6dfe17879c9d58a122655b=1558447061)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: i.snowballsecurities.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://i.snowballsecurities.com/trade?r=30003001)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://i.snowballsecurities.com/api/margin-rate
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_2">traceback</a>
+          <div id="popup_attachment_1_2" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_2">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://i.snowballsecurities.com/trade?r=30003001)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_3">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_3_1">log-1</a>
+        <div id="popup_log_1_3_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_3_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bvisited=1; u=6175430818; xq_a_token=ea501de4478bd19fa60edc1c520508952f50080f; sajssdk_2015_cross_new_user=1; _gat_gtag_UA_16079156_5=1; _ga=GA1.2.323633486.1558447058; _gid=GA1.2.519265043.1558447058; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22%24device_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_71442e351f6dfe17879c9d58a122655b=1558447061; Hm_lpvt_71442e351f6dfe17879c9d58a122655b=1558447061)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: i.snowballsecurities.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://i.snowballsecurities.com/trade?r=30003001)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://i.snowballsecurities.com/api/margin-rate
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_3">traceback</a>
+          <div id="popup_attachment_1_3" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_3">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://i.snowballsecurities.com/trade?r=30003001)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_4">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_4_1">log-1</a>
+        <div id="popup_log_1_4_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_4_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Origin</strong>: https://danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 96
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bsajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22%24device_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_b53ede02df3afea0608038748f4c9f36=1558447058; Hm_lpvt_b53ede02df3afea0608038748f4c9f36=1558447058; _ga=GA1.2.1345612320.1558447058; _gid=GA1.2.1911237309.1558447058; _gat_gtag_UA_16079156_7=1; channel=1300100158; device_id=web_SkBY2KW6N; timestamp=1558449280491; xq_a_token=74786f77ecd18ab50a3555fc5e450228202d5232)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Content-Type'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bapplication/json;charset=UTF-8)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://danjuanapp.com/my-money?channel=1300100158&refer=xq_trade)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>json</th>
+                      <td>
+                        
+                          {}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://danjuanapp.com/service/register-with-xq
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_4">traceback</a>
+          <div id="popup_attachment_1_4" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_4">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://danjuanapp.com/my-money?channel=1300100158&amp;refer=xq_trade)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_5">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_5_1">log-1</a>
+        <div id="popup_log_1_5_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_5_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bvisited=1; u=6175430818; xq_a_token=ea501de4478bd19fa60edc1c520508952f50080f; sajssdk_2015_cross_new_user=1; _gat_gtag_UA_16079156_5=1; _ga=GA1.2.323633486.1558447058; _gid=GA1.2.519265043.1558447058; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22%24device_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_71442e351f6dfe17879c9d58a122655b=1558447061; Hm_lpvt_71442e351f6dfe17879c9d58a122655b=1558447061)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: i.snowballsecurities.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://i.snowballsecurities.com/trade?r=30003001)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://i.snowballsecurities.com/api/margin-rate
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_5">traceback</a>
+          <div id="popup_attachment_1_5" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_5">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://i.snowballsecurities.com/trade?r=30003001)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_6">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_6_1">log-1</a>
+        <div id="popup_log_1_6_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_6_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Origin</strong>: https://danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 96
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bsajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22%24device_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_b53ede02df3afea0608038748f4c9f36=1558447058; Hm_lpvt_b53ede02df3afea0608038748f4c9f36=1558447058; _ga=GA1.2.1345612320.1558447058; _gid=GA1.2.1911237309.1558447058; _gat_gtag_UA_16079156_7=1; channel=1300100158; device_id=web_SkBY2KW6N; timestamp=1558449280491; xq_a_token=74786f77ecd18ab50a3555fc5e450228202d5232)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Content-Type'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bapplication/json;charset=UTF-8)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://danjuanapp.com/my-money?channel=1300100158&refer=xq_trade)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>json</th>
+                      <td>
+                        
+                          {}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://danjuanapp.com/service/register-with-xq
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_6">traceback</a>
+          <div id="popup_attachment_1_6" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_6">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://danjuanapp.com/my-money?channel=1300100158&amp;refer=xq_trade)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_7">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_7_1">log-1</a>
+        <div id="popup_log_1_7_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_7_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Origin</strong>: https://danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 96
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bsajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22%24device_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_b53ede02df3afea0608038748f4c9f36=1558447058; Hm_lpvt_b53ede02df3afea0608038748f4c9f36=1558447058; _ga=GA1.2.1345612320.1558447058; _gid=GA1.2.1911237309.1558447058; _gat_gtag_UA_16079156_7=1; channel=1300100158; device_id=web_SkBY2KW6N; timestamp=1558449280491; xq_a_token=74786f77ecd18ab50a3555fc5e450228202d5232)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Content-Type'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bapplication/json;charset=UTF-8)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://danjuanapp.com/my-money?channel=1300100158&refer=xq_trade)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>json</th>
+                      <td>
+                        
+                          {}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://danjuanapp.com/service/register-with-xq
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_7">traceback</a>
+          <div id="popup_attachment_1_7" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_7">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://danjuanapp.com/my-money?channel=1300100158&amp;refer=xq_trade)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_8">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_8_1">log-1</a>
+        <div id="popup_log_1_8_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_8_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Origin</strong>: https://danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 96
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bsajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22%24device_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_b53ede02df3afea0608038748f4c9f36=1558447058; Hm_lpvt_b53ede02df3afea0608038748f4c9f36=1558447058; _ga=GA1.2.1345612320.1558447058; _gid=GA1.2.1911237309.1558447058; _gat_gtag_UA_16079156_7=1; channel=1300100158; device_id=web_SkBY2KW6N; timestamp=1558449280491; xq_a_token=74786f77ecd18ab50a3555fc5e450228202d5232)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Content-Type'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bapplication/json;charset=UTF-8)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://danjuanapp.com/my-money?channel=1300100158&refer=xq_trade)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>json</th>
+                      <td>
+                        
+                          {}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://danjuanapp.com/service/register-with-xq
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_8">traceback</a>
+          <div id="popup_attachment_1_8" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_8">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://danjuanapp.com/my-money?channel=1300100158&amp;refer=xq_trade)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_9">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_9_1">log-1</a>
+        <div id="popup_log_1_9_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_9_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Origin</strong>: https://danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 96
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bsajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22%24device_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_b53ede02df3afea0608038748f4c9f36=1558447058; Hm_lpvt_b53ede02df3afea0608038748f4c9f36=1558447058; _ga=GA1.2.1345612320.1558447058; _gid=GA1.2.1911237309.1558447058; _gat_gtag_UA_16079156_7=1; channel=1300100158; device_id=web_SkBY2KW6N; timestamp=1558449280491; xq_a_token=74786f77ecd18ab50a3555fc5e450228202d5232)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Content-Type'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bapplication/json;charset=UTF-8)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://danjuanapp.com/my-money?channel=1300100158&refer=xq_trade)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>json</th>
+                      <td>
+                        
+                          {}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://danjuanapp.com/service/register-with-xq
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_9">traceback</a>
+          <div id="popup_attachment_1_9" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_9">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://danjuanapp.com/my-money?channel=1300100158&amp;refer=xq_trade)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_10">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_10_1">log-1</a>
+        <div id="popup_log_1_10_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_10_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bvisited=1; u=6175430818; xq_a_token=ea501de4478bd19fa60edc1c520508952f50080f; sajssdk_2015_cross_new_user=1; _gat_gtag_UA_16079156_5=1; _ga=GA1.2.323633486.1558447058; _gid=GA1.2.519265043.1558447058; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22%24device_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_71442e351f6dfe17879c9d58a122655b=1558447061; Hm_lpvt_71442e351f6dfe17879c9d58a122655b=1558447061)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: i.snowballsecurities.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://i.snowballsecurities.com/trade?r=30003001)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://i.snowballsecurities.com/api/margin-rate
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_10">traceback</a>
+          <div id="popup_attachment_1_10" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_10">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://i.snowballsecurities.com/trade?r=30003001)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_11">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_11_1">log-1</a>
+        <div id="popup_log_1_11_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_11_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Origin</strong>: https://danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 96
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bsajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22%24device_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_b53ede02df3afea0608038748f4c9f36=1558447058; Hm_lpvt_b53ede02df3afea0608038748f4c9f36=1558447058; _ga=GA1.2.1345612320.1558447058; _gid=GA1.2.1911237309.1558447058; _gat_gtag_UA_16079156_7=1; channel=1300100158; device_id=web_SkBY2KW6N; timestamp=1558449280491; xq_a_token=74786f77ecd18ab50a3555fc5e450228202d5232)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Content-Type'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bapplication/json;charset=UTF-8)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://danjuanapp.com/my-money?channel=1300100158&refer=xq_trade)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>json</th>
+                      <td>
+                        
+                          {}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://danjuanapp.com/service/register-with-xq
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_11">traceback</a>
+          <div id="popup_attachment_1_11" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_11">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://danjuanapp.com/my-money?channel=1300100158&amp;refer=xq_trade)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_12">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_12_1">log-1</a>
+        <div id="popup_log_1_12_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_12_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bvisited=1; u=6175430818; xq_a_token=ea501de4478bd19fa60edc1c520508952f50080f; sajssdk_2015_cross_new_user=1; _gat_gtag_UA_16079156_5=1; _ga=GA1.2.323633486.1558447058; _gid=GA1.2.519265043.1558447058; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22%24device_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_71442e351f6dfe17879c9d58a122655b=1558447061; Hm_lpvt_71442e351f6dfe17879c9d58a122655b=1558447061)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: i.snowballsecurities.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://i.snowballsecurities.com/trade?r=30003001)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://i.snowballsecurities.com/api/margin-rate
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_12">traceback</a>
+          <div id="popup_attachment_1_12" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_12">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://i.snowballsecurities.com/trade?r=30003001)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_13">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_13_1">log-1</a>
+        <div id="popup_log_1_13_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_13_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Origin</strong>: https://danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 96
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bsajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22%24device_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_b53ede02df3afea0608038748f4c9f36=1558447058; Hm_lpvt_b53ede02df3afea0608038748f4c9f36=1558447058; _ga=GA1.2.1345612320.1558447058; _gid=GA1.2.1911237309.1558447058; _gat_gtag_UA_16079156_7=1; channel=1300100158; device_id=web_SkBY2KW6N; timestamp=1558449280491; xq_a_token=74786f77ecd18ab50a3555fc5e450228202d5232)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Content-Type'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bapplication/json;charset=UTF-8)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://danjuanapp.com/my-money?channel=1300100158&refer=xq_trade)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>json</th>
+                      <td>
+                        
+                          {}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://danjuanapp.com/service/register-with-xq
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_13">traceback</a>
+          <div id="popup_attachment_1_13" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_13">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://danjuanapp.com/my-money?channel=1300100158&amp;refer=xq_trade)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_14">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_14_1">log-1</a>
+        <div id="popup_log_1_14_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_14_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bvisited=1; u=6175430818; xq_a_token=ea501de4478bd19fa60edc1c520508952f50080f; sajssdk_2015_cross_new_user=1; _gat_gtag_UA_16079156_5=1; _ga=GA1.2.323633486.1558447058; _gid=GA1.2.519265043.1558447058; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22%24device_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_71442e351f6dfe17879c9d58a122655b=1558447061; Hm_lpvt_71442e351f6dfe17879c9d58a122655b=1558447061)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: i.snowballsecurities.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://i.snowballsecurities.com/trade?r=30003001)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://i.snowballsecurities.com/api/margin-rate
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_14">traceback</a>
+          <div id="popup_attachment_1_14" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_14">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://i.snowballsecurities.com/trade?r=30003001)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_15">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_15_1">log-1</a>
+        <div id="popup_log_1_15_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_15_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bvisited=1; u=6175430818; xq_a_token=ea501de4478bd19fa60edc1c520508952f50080f; sajssdk_2015_cross_new_user=1; _gat_gtag_UA_16079156_5=1; _ga=GA1.2.323633486.1558447058; _gid=GA1.2.519265043.1558447058; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22%24device_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_71442e351f6dfe17879c9d58a122655b=1558447061; Hm_lpvt_71442e351f6dfe17879c9d58a122655b=1558447061)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: i.snowballsecurities.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://i.snowballsecurities.com/trade?r=30003001)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://i.snowballsecurities.com/api/margin-rate
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_15">traceback</a>
+          <div id="popup_attachment_1_15" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_15">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://i.snowballsecurities.com/trade?r=30003001)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_16">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_16_1">log-1</a>
+        <div id="popup_log_1_16_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_16_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Origin</strong>: https://danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 96
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bsajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22%24device_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_b53ede02df3afea0608038748f4c9f36=1558447058; Hm_lpvt_b53ede02df3afea0608038748f4c9f36=1558447058; _ga=GA1.2.1345612320.1558447058; _gid=GA1.2.1911237309.1558447058; _gat_gtag_UA_16079156_7=1; channel=1300100158; device_id=web_SkBY2KW6N; timestamp=1558449280491; xq_a_token=74786f77ecd18ab50a3555fc5e450228202d5232)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Content-Type'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bapplication/json;charset=UTF-8)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://danjuanapp.com/my-money?channel=1300100158&refer=xq_trade)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>json</th>
+                      <td>
+                        
+                          {}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://danjuanapp.com/service/register-with-xq
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_16">traceback</a>
+          <div id="popup_attachment_1_16" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_16">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://danjuanapp.com/my-money?channel=1300100158&amp;refer=xq_trade)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_17">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_17_1">log-1</a>
+        <div id="popup_log_1_17_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_17_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bvisited=1; u=6175430818; xq_a_token=ea501de4478bd19fa60edc1c520508952f50080f; sajssdk_2015_cross_new_user=1; _gat_gtag_UA_16079156_5=1; _ga=GA1.2.323633486.1558447058; _gid=GA1.2.519265043.1558447058; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22%24device_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_71442e351f6dfe17879c9d58a122655b=1558447061; Hm_lpvt_71442e351f6dfe17879c9d58a122655b=1558447061)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: i.snowballsecurities.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://i.snowballsecurities.com/trade?r=30003001)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://i.snowballsecurities.com/api/margin-rate
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_17">traceback</a>
+          <div id="popup_attachment_1_17" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_17">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://i.snowballsecurities.com/trade?r=30003001)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_18">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_18_1">log-1</a>
+        <div id="popup_log_1_18_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_18_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Origin</strong>: https://danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 96
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bsajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22%24device_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_b53ede02df3afea0608038748f4c9f36=1558447058; Hm_lpvt_b53ede02df3afea0608038748f4c9f36=1558447058; _ga=GA1.2.1345612320.1558447058; _gid=GA1.2.1911237309.1558447058; _gat_gtag_UA_16079156_7=1; channel=1300100158; device_id=web_SkBY2KW6N; timestamp=1558449280491; xq_a_token=74786f77ecd18ab50a3555fc5e450228202d5232)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Content-Type'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bapplication/json;charset=UTF-8)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://danjuanapp.com/my-money?channel=1300100158&refer=xq_trade)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>json</th>
+                      <td>
+                        
+                          {}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://danjuanapp.com/service/register-with-xq
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_18">traceback</a>
+          <div id="popup_attachment_1_18" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_18">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://danjuanapp.com/my-money?channel=1300100158&amp;refer=xq_trade)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_19">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_19_1">log-1</a>
+        <div id="popup_log_1_19_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_19_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bvisited=1; u=6175430818; xq_a_token=ea501de4478bd19fa60edc1c520508952f50080f; sajssdk_2015_cross_new_user=1; _gat_gtag_UA_16079156_5=1; _ga=GA1.2.323633486.1558447058; _gid=GA1.2.519265043.1558447058; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22%24device_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_71442e351f6dfe17879c9d58a122655b=1558447061; Hm_lpvt_71442e351f6dfe17879c9d58a122655b=1558447061)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: i.snowballsecurities.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://i.snowballsecurities.com/trade?r=30003001)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://i.snowballsecurities.com/api/margin-rate
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_19">traceback</a>
+          <div id="popup_attachment_1_19" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_19">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://i.snowballsecurities.com/trade?r=30003001)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_20">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_20_1">log-1</a>
+        <div id="popup_log_1_20_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_20_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Origin</strong>: https://danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 96
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bsajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22%24device_id%22%3A%2216adaaee8fd106-0ce6454f6-45096e69-245760-16adaaee8fed9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_b53ede02df3afea0608038748f4c9f36=1558447058; Hm_lpvt_b53ede02df3afea0608038748f4c9f36=1558447058; _ga=GA1.2.1345612320.1558447058; _gid=GA1.2.1911237309.1558447058; _gat_gtag_UA_16079156_7=1; channel=1300100158; device_id=web_SkBY2KW6N; timestamp=1558449280491; xq_a_token=74786f77ecd18ab50a3555fc5e450228202d5232)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: danjuanapp.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Content-Type'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bapplication/json;charset=UTF-8)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://danjuanapp.com/my-money?channel=1300100158&refer=xq_trade)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>json</th>
+                      <td>
+                        
+                          {}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://danjuanapp.com/service/register-with-xq
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_20">traceback</a>
+          <div id="popup_attachment_1_20" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_20">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://danjuanapp.com/my-money?channel=1300100158&amp;refer=xq_trade)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_21">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_21_1">log-1</a>
+        <div id="popup_log_1_21_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_21_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bvisited=1; u=6175430818; xq_a_token=ea501de4478bd19fa60edc1c520508952f50080f; sajssdk_2015_cross_new_user=1; _gat_gtag_UA_16079156_5=1; _ga=GA1.2.323633486.1558447058; _gid=GA1.2.519265043.1558447058; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22%24device_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_71442e351f6dfe17879c9d58a122655b=1558447061; Hm_lpvt_71442e351f6dfe17879c9d58a122655b=1558447061)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: i.snowballsecurities.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://i.snowballsecurities.com/trade?r=30003001)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://i.snowballsecurities.com/api/margin-rate
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_21">traceback</a>
+          <div id="popup_attachment_1_21" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_21">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://i.snowballsecurities.com/trade?r=30003001)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_22">
+      <th class="error" style="width:5em;">error</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">N/A ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_22_1">log-1</a>
+        <div id="popup_log_1_22_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_22_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Accept-Language</strong>: zh-CN
+                          </div>
+                          
+                          <div>
+                            <strong>bvisited=1; u=6175430818; xq_a_token=ea501de4478bd19fa60edc1c520508952f50080f; sajssdk_2015_cross_new_user=1; _gat_gtag_UA_16079156_5=1; _ga=GA1.2.323633486.1558447058; _gid=GA1.2.519265043.1558447058; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22%24device_id%22%3A%2216adaaee82145-04c752654-45096e69-245760-16adaaee822e5%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_71442e351f6dfe17879c9d58a122655b=1558447061; Hm_lpvt_71442e351f6dfe17879c9d58a122655b=1558447061)</strong>: (b'X-Requested-With'
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: i.snowballsecurities.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: application/json
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Linux; Android 6.0; Samsung Galaxy S6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
+                          </div>
+                          
+                          <div>
+                            <strong>like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Xueqiu Android 11.17)</strong>: (b'Referer'
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>bgzip</strong>: deflate
+                          </div>
+                          
+                          <div>
+                            <strong>bhttps://i.snowballsecurities.com/trade?r=30003001)</strong>: (b'Accept-Encoding'
+                          </div>
+                          
+                          <div>
+                            <strong>en-US;q=0.8)</strong>: (b'Cookie'
+                          </div>
+                          
+                          <div>
+                            <strong>text/plain</strong>: */*
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>timeout</th>
+                      <td>
+                        
+                          120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://i.snowballsecurities.com/api/margin-rate
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>verify</th>
+                      <td>
+                        
+                          True
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            N/A
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>N/A</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>N/A</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_22">traceback</a>
+          <div id="popup_attachment_1_22" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_22">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+ValueError: Invalid header name &#39;bhttps://i.snowballsecurities.com/trade?r=30003001)&#39;
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>

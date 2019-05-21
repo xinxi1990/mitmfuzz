@@ -1,0 +1,535 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      line-height: 20px;
+      text-align: left;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      line-height: 25px;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+    .popup .separator {
+      color:royalblue
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2019-05-21 22:23:46</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">0.144 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 2.0.6 </td>
+      <td>CPython 2.7.15 </td>
+      <td colspan="2">Darwin-17.7.0-x86_64-i386-64bit</td>
+    </tr>
+    <tr>
+      <th>STAT</th>
+      <th colspan="2">TESTCASES (success/fail)</th>
+      <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+      <td>total (details) =></td>
+      <td colspan="2">1 (1/0)</td>
+      <td colspan="2">1 (1/0/0/0)</td>
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>testcase description</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_1_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">84.05 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_1_1">log-1</a>
+        <div id="popup_log_1_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://entree.dev.igetget.com/ddarticle/v1/article/get?appid=1632426125495894021&amp;token=KWn%2FCP3W2t1eBBdM2aEQT9jrS8VylBNM0rLGMC5W3dbjfbH8LJPeXtj7o8OFVg%3D%3D&amp;sign=9415112c70731a99
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>X-Hitdot</strong>: 
+                          </div>
+                          
+                          <div>
+                            <strong>X-Thumb</strong>: l
+                          </div>
+                          
+                          <div>
+                            <strong>G-Auth-Appid</strong>: 5a27d122ee4638163f594393
+                          </div>
+                          
+                          <div>
+                            <strong>G-Auth-Nonce</strong>: 51aa8379e6f585c9a6c4bb2f51784d48
+                          </div>
+                          
+                          <div>
+                            <strong>X-Seid</strong>: 218ef9e66ce3e0025bfad70cd02dd2ed
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: okhttp/3.11.0
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: entree.dev.igetget.com
+                          </div>
+                          
+                          <div>
+                            <strong>X-Uid</strong>: 85003403
+                          </div>
+                          
+                          <div>
+                            <strong>X-Av</strong>: 6.2.0
+                          </div>
+                          
+                          <div>
+                            <strong>G-Auth-Sign</strong>: ZTIyMzBlNDQwNGYzYjAwODI0NWRiNzAxNWI2NjVhYWQ=
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip
+                          </div>
+                          
+                          <div>
+                            <strong>G-Auth-Token</strong>: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsdW9qaWxhYi5jb20iLCJleHAiOjE1NTkwNDI3OTksImlhdCI6MTU1ODQzNzk5OSwiaXNzIjoiRWFzZUdhdGV3YXkgSldUQXV0aCBQbHVnaW4iLCJuYmYiOjE1NTg0Mzc5OTksInN1YiI6Ijg1MDAzNDAzIn0.5J13wFzrBZv434Oi7yos7349FnruBeGZ0LNw4VmjORaaWUiFX3Q2yVNrSKqf27JfNQRsAT3NYL2gouO0Xju66Q
+                          </div>
+                          
+                          <div>
+                            <strong>X-Ov</strong>: 6.0
+                          </div>
+                          
+                          <div>
+                            <strong>X-Os</strong>: ANDROID
+                          </div>
+                          
+                          <div>
+                            <strong>X-Net</strong>: WIFI
+                          </div>
+                          
+                          <div>
+                            <strong>X-D</strong>: ae244834553d4eda
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: Keep-Alive
+                          </div>
+                          
+                          <div>
+                            <strong>X-Chil</strong>: 0
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>X-Dt</strong>: phone
+                          </div>
+                          
+                          <div>
+                            <strong>X-Scr</strong>: 2.0
+                          </div>
+                          
+                          <div>
+                            <strong>X-Dv</strong>: Samsung Galaxy S6
+                          </div>
+                          
+                          <div>
+                            <strong>X-T</strong>: json
+                          </div>
+                          
+                          <div>
+                            <strong>X-Adv</strong>: 1
+                          </div>
+                          
+                          <div>
+                            <strong>X-V</strong>: 2
+                          </div>
+                          
+                          <div>
+                            <strong>X-App-Key</strong>: android-6.2.0
+                          </div>
+                          
+                          <div>
+                            <strong>G-Auth-Ts</strong>: 1558442957
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://entree.dev.igetget.com/ddarticle/v1/article/get?appid=1632426125495894021&token=KWn%2FCP3W2t1eBBdM2aEQT9jrS8VylBNM0rLGMC5W3dbjfbH8LJPeXtj7o8OFVg%3D%3D&sign=9415112c70731a99
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{u&#39;code&#39;: 0, u&#39;data&#39;: {u&#39;content&#39;: u&#39;{&#34;title&#34;:&#34;\u6d4b\u8bd5\u4e00\u4e2a\u4e3b\u9898\u4e66\u5355-\u7535\u5b50\u4e66&#34;,&#34;templateType&#34;:&#34;default&#34;,&#34;content&#34;:[{&#34;key&#34;:&#34;text-1556075729398&#34;,&#34;style&#34;:&#34;style&#34;,&#34;type&#34;:&#34;text&#34;,&#34;value&#34;:&#34;&#34;},{&#34;type&#34;:&#34;title&#34;,&#34;key&#34;:&#34;title-1556075736013&#34;,&#34;value&#34;:&#34;\u6211\u662f\u6807\u9898\u4f60\u662f\u5565&#34;},{&#34;type&#34;:&#34;text&#34;,&#34;key&#34;:&#34;text-1556075743989&#34;,&#34;value&#34;:&#34;&lt;p&gt;\u6211\u662f\u6b63\u6587\u5475\u5475\u5475\u5475&lt;/p&gt;&#34;,&#34;style&#34;:&#34;default&#34;},{&#34;type&#34;:&#34;audiobook&#34;,&#34;key&#34;:&#34;audiobook-1556075754872&#34;,&#34;value&#34;:&#34;1988&#34;,&#34;audiobook&#34;:{&#34;id&#34;:&#34;1988&#34;,&#34;alias_id&#34;:&#34;&#34;,&#34;title&#34;:&#34;\u300a\u5168\u65b0\u601d\u7ef4\uff1a\u51b3\u80dc\u672a\u6765\u76846\u5927\u80fd\u529b\u300b| \u5f20\u51ef\u89e3\u8bfb&#34;,&#34;icon&#34;:&#34;http://piccdn.igetget.com/img/201803/12/201803121640403524391669.jpg@200w&#34;,&#34;audio_price&#34;:&#34;4.99&#34;,&#34;status&#34;:&#34;1&#34;}},{&#34;type&#34;:&#34;audiobook&#34;,&#34;key&#34;:&#34;audiobook-1556075773991&#34;,&#34;value&#34;:&#34;2988&#34;,&#34;audiobook&#34;:{&#34;id&#34;:&#34;2988&#34;,&#34;alias_id&#34;:&#34;&#34;,&#34;title&#34;:&#34;\u300a\u79cd\u5b50\u7684\u80dc\u5229\u300b| \u9648\u654f\u8bda\u89e3\u8bfb&#34;,&#34;icon&#34;:&#34;http://piccdn.igetget.com/img/201803/12/201803121909214211915183.jpg@200w&#34;,&#34;audio_price&#34;:&#34;4.99&#34;,&#34;status&#34;:&#34;1&#34;}},{&#34;type&#34;:&#34;ebook&#34;,&#34;key&#34;:&#34;ebook-1556075784638&#34;,&#34;value&#34;:&#34;2000&#34;,&#34;ebook&#34;:{&#34;id&#34;:&#34;2000&#34;,&#34;title&#34;:&#34;\u7f8e\u56fd\u7684\u6545\u4e8b\uff087\u518c\u88c5\uff09&#34;,&#34;desc&#34;:&#34;\u300c\u539f\u4ef7149\uff0c\u9650\u65f65\u6298\u300d\u4ece\u5317\u7f8e\u6b96\u6c11\u5730\u7684\u5efa\u7acb\uff0c\u5230\u72ec\u7acb\u6218\u4e89\uff0c\u518d\u5230\u603b\u7edf\u5c31\u4efb\uff0c\u771f\u5b9e\u518d\u73b0\u7f8e\u56fd\u7684\u8bde\u751f\u3002&#34;,&#34;icon&#34;:&#34;https://piccdn.igetget.com/img/201712/23/201712231010578282952434.jpg&#34;}}],&#34;author&#34;:{&#34;name&#34;:&#34;\u7535\u5b50\u4e66&#34;,&#34;avatar&#34;:&#34;http://piccdn.igetget.com/img/201904/24/201904241114136725999012.jpeg&#34;},&#34;message&#34;:{&#34;title&#34;:&#34;\u7528\u6237\u7559\u8a00&#34;,&#34;writeText&#34;:&#34;\u5199\u7559\u8a00&#34;,&#34;tips&#34;:&#34;\u63d0\u4ea4\u7559\u8a00\u53ef\u4e0e\u4e13\u680f\u4f5c\u8005\u4e92\u52a8&#34;},&#34;new&#34;:1,&#34;cssLink&#34;:&#34;http://staticcdn.dev.igetget.com/docker/fe-editor/dist/preview.b8c8c6166d14d9e7d023.css&#34;,&#34;fontStyle&#34;:&#34;\\n        @font-face {\\n            font-family: \\&#34;font-text\\&#34;;\\n            src: url(https://piccdn.igetget.com/fontminify_dev/a103c1112ee5c302c119846966f0a13e.woff);\\n        }\\n        .article .article-body p,.article .article-body ul li,.article .article-body ol li,.article .article-body .tips p b,.article .elite-module {\\n            font-family: \\&#34;font-text\\&#34;;\\n        }\\n    \\n        @font-face {\\n            font-family: \\&#34;font-title\\&#34;;\\n            src: url(https://piccdn.igetget.com/fontminify_dev/729d84fd633205e52ae4e1e33a50a4fa.woff);\\n        }\\n        .article .title,.article h3.letter-item,.article h4.letter-item,.article .article-body h2.titleCenter {\\n            font-family: \\&#34;font-title\\&#34;;\\n        }\\n    \\n        @font-face {\\n            font-family: \\&#34;font-tip\\&#34;;\\n            src: url(https://piccdn.igetget.com/fontminify_dev/a943a73c9ec984a087373fbb00dfc4b4.woff);\\n        }\\n        .article .article-body .tag span,.article .article-body figure figcaption,.article .article-body .audio .audio-tips .text,.article .article-body .tips p,.article .article-body .audio .info span,.article .author {\\n            font-family: \\&#34;font-tip\\&#34;;\\n        }\\n    \\n        @font-face {\\n            font-family: \\&#34;font-titleSmall\\&#34;;\\n            src: url(https://piccdn.igetget.com/fontminify_dev/2124efdf44adc32db9bb749fd0796d2e.woff);\\n        }\\n        .article .article-body h2 {\\n            font-family: \\&#34;font-titleSmall\\&#34;;\\n        }\\n    &#34;}&#39;, u&#39;article&#39;: {u&#39;Status&#39;: 0, u&#39;UpdateTime&#39;: 1557843364, u&#39;AppIdStr&#39;: u&#39;1632426125495894021&#39;, u&#39;PublishTime&#39;: 1556075709, u&#39;Id&#39;: 1670823570135056384, u&#39;Version&#39;: 1, u&#39;IdStr&#39;: u&#39;1670823570135056384&#39;, u&#39;AppId&#39;: 1632426125495894021, u&#39;CreateTime&#39;: 1556075709}}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Proxy-Connection</strong>: Keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>G-Powered-By</strong>: EaseGateway
+                            </div>
+                            
+                            <div>
+                              <strong>G-Timestamp</strong>: 1558448626
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 21 May 2019 14:23:46 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json; charset=utf-8
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>3591</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>84.05</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>73.259</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>

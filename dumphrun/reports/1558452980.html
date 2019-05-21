@@ -1,0 +1,2875 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      line-height: 20px;
+      text-align: left;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      line-height: 25px;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+    .popup .separator {
+      color:royalblue
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2019-05-21 23:36:20</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">0.496 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 2.0.6 </td>
+      <td>CPython 2.7.15 </td>
+      <td colspan="2">Darwin-17.7.0-x86_64-i386-64bit</td>
+    </tr>
+    <tr>
+      <th>STAT</th>
+      <th colspan="2">TESTCASES (success/fail)</th>
+      <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+      <td>total (details) =></td>
+      <td colspan="2">1 (1/0)</td>
+      <td colspan="2">10 (10/0/0/0)</td>
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>testcase description</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <td>TOTAL: 10</td>
+      <td>SUCCESS: 10</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_1_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">145.74 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_1_1">log-1</a>
+        <div id="popup_log_1_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 365
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: dedao.dev.igetget.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: okhttp/3.11.0
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: Keep-Alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cache-Control</strong>: no-cache
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/json; charset=UTF-8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          {&#34;h&#34;: {&#34;adv&#34;: &#34;1&#34;, &#34;v&#34;: &#34;2&#34;, &#34;thumb&#34;: &#34;l&#34;, &#34;seid&#34;: &#34;1fdab2a5fa99e1edda214151eefc27d2&#34;, &#34;ts&#34;: &#34;1558452493&#34;, &#34;d&#34;: &#34;ae244834553d4eda&#34;, &#34;s&#34;: &#34;db578eef9d289db9&#34;, &#34;X-Dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;u&#34;: &#34;84846274&#34;, &#34;t&#34;: &#34;json&#34;, &#34;chil&#34;: &#34;0&#34;, &#34;av&#34;: &#34;6.2.0&#34;, &#34;dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;ov&#34;: &#34;6.0&#34;, &#34;dt&#34;: &#34;phone&#34;, &#34;os&#34;: &#34;ANDROID&#34;, &#34;net&#34;: &#34;WIFI&#34;, &#34;scr&#34;: &#34;2.0&#34;}, &#34;struct_id&#34;: 25490}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{u&#39;h&#39;: {u&#39;s&#39;: 1558452980, u&#39;c&#39;: 10002, u&#39;e&#39;: u&#39;sign error!&#39;, u&#39;t&#39;: 0.000330907}, u&#39;c&#39;: {}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 91
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>G-Powered-By</strong>: EaseGateway
+                            </div>
+                            
+                            <div>
+                              <strong>G-Timestamp</strong>: 1558452980
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 21 May 2019 15:36:20 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json; charset=utf-8
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>73</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>145.74</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>73.634</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_2">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">27.77 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_2_1">log-1</a>
+        <div id="popup_log_1_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 365
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: dedao.dev.igetget.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: okhttp/3.11.0
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: Keep-Alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cache-Control</strong>: no-cache
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/json; charset=UTF-8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          {&#34;h&#34;: {&#34;adv&#34;: &#34;1&#34;, &#34;v&#34;: &#34;2&#34;, &#34;thumb&#34;: &#34;l&#34;, &#34;seid&#34;: &#34;1fdab2a5fa99e1edda214151eefc27d2&#34;, &#34;ts&#34;: &#34;1558452493&#34;, &#34;d&#34;: &#34;ae244834553d4eda&#34;, &#34;s&#34;: &#34;db578eef9d289db9&#34;, &#34;X-Dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;u&#34;: &#34;84846274&#34;, &#34;t&#34;: &#34;json&#34;, &#34;chil&#34;: &#34;0&#34;, &#34;av&#34;: &#34;6.2.0&#34;, &#34;dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;ov&#34;: &#34;6.0&#34;, &#34;dt&#34;: &#34;phone&#34;, &#34;os&#34;: &#34;ANDROID&#34;, &#34;net&#34;: &#34;WIFI&#34;, &#34;scr&#34;: &#34;2.0&#34;}, &#34;struct_id&#34;: 25490}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{u&#39;h&#39;: {u&#39;s&#39;: 1558452980, u&#39;c&#39;: 10002, u&#39;e&#39;: u&#39;sign error!&#39;, u&#39;t&#39;: 0.000274884}, u&#39;c&#39;: {}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 92
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>G-Powered-By</strong>: EaseGateway
+                            </div>
+                            
+                            <div>
+                              <strong>G-Timestamp</strong>: 1558452980
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 21 May 2019 15:36:20 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json; charset=utf-8
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>73</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>27.77</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>25.434</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_3">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">26.10 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_3_1">log-1</a>
+        <div id="popup_log_1_3_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_3_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 365
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: dedao.dev.igetget.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: okhttp/3.11.0
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: Keep-Alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cache-Control</strong>: no-cache
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/json; charset=UTF-8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          {&#34;h&#34;: {&#34;adv&#34;: &#34;1&#34;, &#34;v&#34;: &#34;2&#34;, &#34;thumb&#34;: &#34;l&#34;, &#34;seid&#34;: &#34;1fdab2a5fa99e1edda214151eefc27d2&#34;, &#34;ts&#34;: &#34;1558452493&#34;, &#34;d&#34;: &#34;ae244834553d4eda&#34;, &#34;s&#34;: &#34;db578eef9d289db9&#34;, &#34;X-Dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;u&#34;: &#34;84846274&#34;, &#34;t&#34;: &#34;json&#34;, &#34;chil&#34;: &#34;0&#34;, &#34;av&#34;: &#34;6.2.0&#34;, &#34;dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;ov&#34;: &#34;6.0&#34;, &#34;dt&#34;: &#34;phone&#34;, &#34;os&#34;: &#34;ANDROID&#34;, &#34;net&#34;: &#34;WIFI&#34;, &#34;scr&#34;: &#34;2.0&#34;}, &#34;struct_id&#34;: 25490}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{u&#39;h&#39;: {u&#39;s&#39;: 1558452980, u&#39;c&#39;: 10002, u&#39;e&#39;: u&#39;sign error!&#39;, u&#39;t&#39;: 0.000272387}, u&#39;c&#39;: {}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 91
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>G-Powered-By</strong>: EaseGateway
+                            </div>
+                            
+                            <div>
+                              <strong>G-Timestamp</strong>: 1558452980
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 21 May 2019 15:36:20 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json; charset=utf-8
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>73</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>26.1</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>23.286</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_4">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">24.85 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_4_1">log-1</a>
+        <div id="popup_log_1_4_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_4_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 365
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: dedao.dev.igetget.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: okhttp/3.11.0
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: Keep-Alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cache-Control</strong>: no-cache
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/json; charset=UTF-8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          {&#34;h&#34;: {&#34;adv&#34;: &#34;1&#34;, &#34;v&#34;: &#34;2&#34;, &#34;thumb&#34;: &#34;l&#34;, &#34;seid&#34;: &#34;1fdab2a5fa99e1edda214151eefc27d2&#34;, &#34;ts&#34;: &#34;1558452493&#34;, &#34;d&#34;: &#34;ae244834553d4eda&#34;, &#34;s&#34;: &#34;db578eef9d289db9&#34;, &#34;X-Dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;u&#34;: &#34;84846274&#34;, &#34;t&#34;: &#34;json&#34;, &#34;chil&#34;: &#34;0&#34;, &#34;av&#34;: &#34;6.2.0&#34;, &#34;dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;ov&#34;: &#34;6.0&#34;, &#34;dt&#34;: &#34;phone&#34;, &#34;os&#34;: &#34;ANDROID&#34;, &#34;net&#34;: &#34;WIFI&#34;, &#34;scr&#34;: &#34;2.0&#34;}, &#34;struct_id&#34;: 25490}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{u&#39;h&#39;: {u&#39;s&#39;: 1558452980, u&#39;c&#39;: 10002, u&#39;e&#39;: u&#39;sign error!&#39;, u&#39;t&#39;: 0.00027395}, u&#39;c&#39;: {}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 90
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>G-Powered-By</strong>: EaseGateway
+                            </div>
+                            
+                            <div>
+                              <strong>G-Timestamp</strong>: 1558452980
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 21 May 2019 15:36:20 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json; charset=utf-8
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>72</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>24.85</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>22.938</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_5">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">48.25 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_5_1">log-1</a>
+        <div id="popup_log_1_5_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_5_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 365
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: dedao.dev.igetget.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: okhttp/3.11.0
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: Keep-Alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cache-Control</strong>: no-cache
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/json; charset=UTF-8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          {&#34;h&#34;: {&#34;adv&#34;: &#34;1&#34;, &#34;v&#34;: &#34;2&#34;, &#34;thumb&#34;: &#34;l&#34;, &#34;seid&#34;: &#34;1fdab2a5fa99e1edda214151eefc27d2&#34;, &#34;ts&#34;: &#34;1558452493&#34;, &#34;d&#34;: &#34;ae244834553d4eda&#34;, &#34;s&#34;: &#34;db578eef9d289db9&#34;, &#34;X-Dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;u&#34;: &#34;84846274&#34;, &#34;t&#34;: &#34;json&#34;, &#34;chil&#34;: &#34;0&#34;, &#34;av&#34;: &#34;6.2.0&#34;, &#34;dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;ov&#34;: &#34;6.0&#34;, &#34;dt&#34;: &#34;phone&#34;, &#34;os&#34;: &#34;ANDROID&#34;, &#34;net&#34;: &#34;WIFI&#34;, &#34;scr&#34;: &#34;2.0&#34;}, &#34;struct_id&#34;: 25490}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{u&#39;h&#39;: {u&#39;s&#39;: 1558452980, u&#39;c&#39;: 10002, u&#39;e&#39;: u&#39;sign error!&#39;, u&#39;t&#39;: 0.000249478}, u&#39;c&#39;: {}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 90
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>G-Powered-By</strong>: EaseGateway
+                            </div>
+                            
+                            <div>
+                              <strong>G-Timestamp</strong>: 1558452980
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 21 May 2019 15:36:20 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json; charset=utf-8
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>73</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>48.25</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>45.979</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_6">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">31.12 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_6_1">log-1</a>
+        <div id="popup_log_1_6_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_6_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 365
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: dedao.dev.igetget.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: okhttp/3.11.0
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: Keep-Alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cache-Control</strong>: no-cache
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/json; charset=UTF-8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          {&#34;h&#34;: {&#34;adv&#34;: &#34;1&#34;, &#34;v&#34;: &#34;2&#34;, &#34;thumb&#34;: &#34;l&#34;, &#34;seid&#34;: &#34;1fdab2a5fa99e1edda214151eefc27d2&#34;, &#34;ts&#34;: &#34;1558452493&#34;, &#34;d&#34;: &#34;ae244834553d4eda&#34;, &#34;s&#34;: &#34;db578eef9d289db9&#34;, &#34;X-Dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;u&#34;: &#34;84846274&#34;, &#34;t&#34;: &#34;json&#34;, &#34;chil&#34;: &#34;0&#34;, &#34;av&#34;: &#34;6.2.0&#34;, &#34;dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;ov&#34;: &#34;6.0&#34;, &#34;dt&#34;: &#34;phone&#34;, &#34;os&#34;: &#34;ANDROID&#34;, &#34;net&#34;: &#34;WIFI&#34;, &#34;scr&#34;: &#34;2.0&#34;}, &#34;struct_id&#34;: 25490}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{u&#39;h&#39;: {u&#39;s&#39;: 1558452980, u&#39;c&#39;: 10002, u&#39;e&#39;: u&#39;sign error!&#39;, u&#39;t&#39;: 0.000246783}, u&#39;c&#39;: {}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 92
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>G-Powered-By</strong>: EaseGateway
+                            </div>
+                            
+                            <div>
+                              <strong>G-Timestamp</strong>: 1558452980
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 21 May 2019 15:36:20 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json; charset=utf-8
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>73</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>31.12</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>27.166</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_7">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">26.97 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_7_1">log-1</a>
+        <div id="popup_log_1_7_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_7_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 365
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: dedao.dev.igetget.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: okhttp/3.11.0
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: Keep-Alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cache-Control</strong>: no-cache
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/json; charset=UTF-8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          {&#34;h&#34;: {&#34;adv&#34;: &#34;1&#34;, &#34;v&#34;: &#34;2&#34;, &#34;thumb&#34;: &#34;l&#34;, &#34;seid&#34;: &#34;1fdab2a5fa99e1edda214151eefc27d2&#34;, &#34;ts&#34;: &#34;1558452493&#34;, &#34;d&#34;: &#34;ae244834553d4eda&#34;, &#34;s&#34;: &#34;db578eef9d289db9&#34;, &#34;X-Dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;u&#34;: &#34;84846274&#34;, &#34;t&#34;: &#34;json&#34;, &#34;chil&#34;: &#34;0&#34;, &#34;av&#34;: &#34;6.2.0&#34;, &#34;dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;ov&#34;: &#34;6.0&#34;, &#34;dt&#34;: &#34;phone&#34;, &#34;os&#34;: &#34;ANDROID&#34;, &#34;net&#34;: &#34;WIFI&#34;, &#34;scr&#34;: &#34;2.0&#34;}, &#34;struct_id&#34;: 25490}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{u&#39;h&#39;: {u&#39;s&#39;: 1558452980, u&#39;c&#39;: 10002, u&#39;e&#39;: u&#39;sign error!&#39;, u&#39;t&#39;: 0.000185673}, u&#39;c&#39;: {}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 93
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>G-Powered-By</strong>: EaseGateway
+                            </div>
+                            
+                            <div>
+                              <strong>G-Timestamp</strong>: 1558452980
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 21 May 2019 15:36:20 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json; charset=utf-8
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>73</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>26.97</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>24.773</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_8">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">31.88 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_8_1">log-1</a>
+        <div id="popup_log_1_8_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_8_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 365
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: dedao.dev.igetget.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: okhttp/3.11.0
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: Keep-Alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cache-Control</strong>: no-cache
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/json; charset=UTF-8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          {&#34;h&#34;: {&#34;adv&#34;: &#34;1&#34;, &#34;v&#34;: &#34;2&#34;, &#34;thumb&#34;: &#34;l&#34;, &#34;seid&#34;: &#34;1fdab2a5fa99e1edda214151eefc27d2&#34;, &#34;ts&#34;: &#34;1558452493&#34;, &#34;d&#34;: &#34;ae244834553d4eda&#34;, &#34;s&#34;: &#34;db578eef9d289db9&#34;, &#34;X-Dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;u&#34;: &#34;84846274&#34;, &#34;t&#34;: &#34;json&#34;, &#34;chil&#34;: &#34;0&#34;, &#34;av&#34;: &#34;6.2.0&#34;, &#34;dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;ov&#34;: &#34;6.0&#34;, &#34;dt&#34;: &#34;phone&#34;, &#34;os&#34;: &#34;ANDROID&#34;, &#34;net&#34;: &#34;WIFI&#34;, &#34;scr&#34;: &#34;2.0&#34;}, &#34;struct_id&#34;: 25490}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{u&#39;h&#39;: {u&#39;s&#39;: 1558452980, u&#39;c&#39;: 10002, u&#39;e&#39;: u&#39;sign error!&#39;, u&#39;t&#39;: 0.000250121}, u&#39;c&#39;: {}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 91
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>G-Powered-By</strong>: EaseGateway
+                            </div>
+                            
+                            <div>
+                              <strong>G-Timestamp</strong>: 1558452980
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 21 May 2019 15:36:20 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json; charset=utf-8
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>73</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>31.88</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>29.516</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_9">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">29.26 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_9_1">log-1</a>
+        <div id="popup_log_1_9_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_9_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 365
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: dedao.dev.igetget.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: okhttp/3.11.0
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: Keep-Alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cache-Control</strong>: no-cache
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/json; charset=UTF-8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          {&#34;h&#34;: {&#34;adv&#34;: &#34;1&#34;, &#34;v&#34;: &#34;2&#34;, &#34;thumb&#34;: &#34;l&#34;, &#34;seid&#34;: &#34;1fdab2a5fa99e1edda214151eefc27d2&#34;, &#34;ts&#34;: &#34;1558452493&#34;, &#34;d&#34;: &#34;ae244834553d4eda&#34;, &#34;s&#34;: &#34;db578eef9d289db9&#34;, &#34;X-Dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;u&#34;: &#34;84846274&#34;, &#34;t&#34;: &#34;json&#34;, &#34;chil&#34;: &#34;0&#34;, &#34;av&#34;: &#34;6.2.0&#34;, &#34;dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;ov&#34;: &#34;6.0&#34;, &#34;dt&#34;: &#34;phone&#34;, &#34;os&#34;: &#34;ANDROID&#34;, &#34;net&#34;: &#34;WIFI&#34;, &#34;scr&#34;: &#34;2.0&#34;}, &#34;struct_id&#34;: 25490}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{u&#39;h&#39;: {u&#39;s&#39;: 1558452980, u&#39;c&#39;: 10002, u&#39;e&#39;: u&#39;sign error!&#39;, u&#39;t&#39;: 0.000178235}, u&#39;c&#39;: {}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 91
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>G-Powered-By</strong>: EaseGateway
+                            </div>
+                            
+                            <div>
+                              <strong>G-Timestamp</strong>: 1558452980
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 21 May 2019 15:36:20 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json; charset=utf-8
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>73</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>29.26</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>26.14</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_10">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">casname</td>
+      <td style="text-align:center;width:6em;">25.89 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_10_1">log-1</a>
+        <div id="popup_log_1_10_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_10_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: casname</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 365
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip
+                          </div>
+                          
+                          <div>
+                            <strong>Host</strong>: dedao.dev.igetget.com
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>User-Agent</strong>: okhttp/3.11.0
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: Keep-Alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cache-Control</strong>: no-cache
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/json; charset=UTF-8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          {&#34;h&#34;: {&#34;adv&#34;: &#34;1&#34;, &#34;v&#34;: &#34;2&#34;, &#34;thumb&#34;: &#34;l&#34;, &#34;seid&#34;: &#34;1fdab2a5fa99e1edda214151eefc27d2&#34;, &#34;ts&#34;: &#34;1558452493&#34;, &#34;d&#34;: &#34;ae244834553d4eda&#34;, &#34;s&#34;: &#34;db578eef9d289db9&#34;, &#34;X-Dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;u&#34;: &#34;84846274&#34;, &#34;t&#34;: &#34;json&#34;, &#34;chil&#34;: &#34;0&#34;, &#34;av&#34;: &#34;6.2.0&#34;, &#34;dv&#34;: &#34;Samsung Galaxy S6&#34;, &#34;ov&#34;: &#34;6.0&#34;, &#34;dt&#34;: &#34;phone&#34;, &#34;os&#34;: &#34;ANDROID&#34;, &#34;net&#34;: &#34;WIFI&#34;, &#34;scr&#34;: &#34;2.0&#34;}, &#34;struct_id&#34;: 25490}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=4056bd5301cff045d4c0c2d8856322ea
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{u&#39;h&#39;: {u&#39;s&#39;: 1558452980, u&#39;c&#39;: 10002, u&#39;e&#39;: u&#39;sign error!&#39;, u&#39;t&#39;: 0.000207098}, u&#39;c&#39;: {}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 92
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>G-Powered-By</strong>: EaseGateway
+                            </div>
+                            
+                            <div>
+                              <strong>G-Timestamp</strong>: 1558452980
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 21 May 2019 15:36:20 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json; charset=utf-8
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>73</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>25.89</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>23.661</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>
