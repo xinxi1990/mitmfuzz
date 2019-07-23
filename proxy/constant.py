@@ -1,3 +1,3 @@
 # *_*coding:utf-8 *_*
 
-split_joint='+'
+SPLIT_POINT='+'

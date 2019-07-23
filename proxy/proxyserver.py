@@ -10,7 +10,7 @@ import mitmproxy.http
 from mitmproxy import ctx
 import json, time, os
 
-from constant import split_joint
+from constant import SPLIT_POINT
 from proxyrule import ProxyRule
 from mathrandom import MathRandom
 from filetools import *
@@ -68,8 +68,8 @@ def response(flow: mitmproxy.http.HTTPFlow):
             original_data_str = str(original_data)
             get_mock_data_str = str(get_mock_data)
             content={"param_len":" ","param_value":" "}
-            param_value = req_url + split_joint + req_method + split_joint + resp_status_code + split_joint \
-                      + spend_time_str + split_joint + original_data_str + split_joint + get_mock_data_str
+            param_value = req_url + SPLIT_POINT + req_method + SPLIT_POINT + resp_status_code + SPLIT_POINT \
+                      + spend_time_str + SPLIT_POINT + original_data_str + SPLIT_POINT + get_mock_data_str
             req_url_len = len(req_url)
             req_method_len = len(req_method)
             resp_status_code_len = len(resp_status_code)
