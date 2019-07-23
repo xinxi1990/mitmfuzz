@@ -7,16 +7,15 @@
 @describe: 创建报告
 """
 
-import os,re,time,subprocess,sys,json
+import os, time, sys, json
 sys.path.append('..')
 from jinja2 import Environment, PackageLoader
 from deepdiff import DeepDiff
 
 
-
 class Create():
 
-    def __init__(self,report_path,log_path):
+    def __init__(self, report_path, log_path):
         self.report_path = report_path
         self.log_path = log_path
 
@@ -33,7 +32,7 @@ class Create():
             env = Environment(loader=PackageLoader('proxy', 'templates'))
             template = env.get_template("template.html")
             records = Create.gen_data(self.log_path)
-            html_content = template.render(html_report_name="测试报告",records=records)
+            html_content = template.render(html_report_name="测试报告", records=records)
             with open(report_path, "wb") as f:
                 f.write(html_content.encode("utf-8"))
                 print('报告地址:\n{}'.format(report_path))
@@ -42,7 +41,6 @@ class Create():
         finally:
             return report_path
 
-
     @staticmethod
     def gen_data(file_path):
         '''
@@ -50,27 +48,46 @@ class Create():
         :return:
         '''
         records = []
-        with open(file_path) as f_r:
+        with open(file_path, encoding='utf-8') as f_r:
+            i=0
             for line in f_r.readlines():
-                item = line.split('|')
+                i=i+1
+                print('line:',line)
+                print('line[0]:',line[0])
+                if line[0]!='{':
+                    line_json = eval(line[1:])  #第一行第一个可能有个特殊字符
+                else:
+                    line_json = eval(line)
+                param_len = line_json['param_len']
+                item = line_json['param_value']
                 data = {}
-                data['name'] = item[0]
-                data['method'] = item[1]
-                data['status'] = item[2]
-                data['response_time_ms'] = item[3]
-                data['original'] =  json.dumps(eval(item[4]),indent=4)
-                data['intercept'] = json.dumps(eval(item[5]),indent=4)
+                data['name'] = item[0:param_len[0]]
+                data['method'] = item[param_len[0] + 1:param_len[0] + 1 + param_len[1]]
+                data['status'] = item[param_len[0] + param_len[1] + 2:param_len[0] + param_len[1] + param_len[2] + 2]
+                data['response_time_ms'] = item[
+                                           param_len[0] + param_len[1] + param_len[2] + 3:param_len[0] + param_len[1] +
+                                                                                          param_len[2] + param_len[
+                                                                                              3] + 3]
+                data_original_str = str(item[
+                                        param_len[0] + param_len[1] + param_len[2] + param_len[3] + 4:param_len[0] +
+                                                                                                      param_len[1] +
+                                                                                                      param_len[2] +
+                                                                                                      param_len[3] +
+                                                                                                      param_len[4] + 4])
+                data_intercept_str = str(item[
+                                         param_len[0] + param_len[1] + param_len[2] + param_len[3] + param_len[4] + 5:
+                                         param_len[0] + param_len[1] + param_len[2] + param_len[3] + param_len[4] +
+                                         param_len[5] + 5])
+                data['original'] = json.dumps(eval(data_original_str), indent=4)
+                data['intercept'] = json.dumps(eval(data_intercept_str), indent=4)
                 # diff_data = diff(eval(item[2]),eval(item[3]))
-                diff_data = DeepDiff(eval(item[4]), eval(item[5]), ignore_order=True)
+                diff_data = DeepDiff(eval(data_original_str), eval(data_intercept_str), ignore_order=True)
                 data['diff'] = diff_data
                 records.append(data)
         return records
 
 
-
 if __name__ == '__main__':
-    save_path  = sys.argv[1]
+    save_path = sys.argv[1]
     request_log_path = sys.argv[2]
-    Create(save_path,request_log_path).create_html()
-
-
+    Create(save_path, request_log_path).create_html()

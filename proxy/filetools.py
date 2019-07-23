@@ -32,7 +32,7 @@ def write_file(filename,content,is_cover=False):
           file_mode = "w"
        else:
            file_mode = "a"
-       with open(filename,file_mode) as f_w:
+       with open(filename,file_mode,encoding='utf-8') as f_w:
           f_w.write(newstr)
           print('写{}文件完成'.format(filename))
     except Exception as e:

@@ -8,19 +8,20 @@
 
 import mitmproxy.http
 from mitmproxy import ctx
-import json,time,os
+import json, time, os
+
+from constant import split_joint
 from proxyrule import ProxyRule
 from mathrandom import MathRandom
 from filetools import *
-
 
 project_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 now = time.strftime("%Y%m%d%H%M%S", time.localtime()) + "_intercept.log"
 save_log_file = os.path.join(project_path, now)
 
+
 def request(flow: mitmproxy.http.HTTPFlow):
     request = flow.request
-    ctx.log.info("========================== intercept request start ==========================")
     ctx.log.info("========================== intercept request start ==========================")
     ctx.log.info("========================== host is:{} ========================== ".format(request.host))
     ctx.log.info("========================== url is:{} ========================== ".format(request.pretty_url))
@@ -37,11 +38,11 @@ def response(flow: mitmproxy.http.HTTPFlow):
     '''
     is_mock = True
 
-    black_list = ["png", "jpg", "js", "css", "html",'img','cdn']
+    black_list = ["png", "jpg", "js", "css", "html", 'img', 'cdn']
 
-    for balck_str in black_list:
-        if balck_str in flow.request.url:
-            ctx.log.info("========================== not intercept response ==========================")
+    for black_str in black_list:
+        if black_str in flow.request.url:
+            ctx.log.info("========================== not necessary intercept response ==========================")
             is_mock = False
             break
 
@@ -59,12 +60,26 @@ def response(flow: mitmproxy.http.HTTPFlow):
             ctx.log.info(flow.response.text)
             ctx.log.info("========================== intercept response end ==========================")
             spend_time = int((flow.response.timestamp_end - flow.request.timestamp_start) * 1000)
-            content = str(flow.request.url) + '|' + str(flow.request.method) + '|' + str(flow.response.status_code) + '|' \
-                      + str(spend_time) + '|' +  str(original_data) + '|' + str(get_mock_data)
-            write_file(save_log_file,content,is_cover=False)
+            req_url = str(flow.request.url)
 
+            req_method = str(flow.request.method)
+            resp_status_code = str(flow.response.status_code)
+            spend_time_str = str(spend_time)
+            original_data_str = str(original_data)
+            get_mock_data_str = str(get_mock_data)
+            content={"param_len":" ","param_value":" "}
+            param_value = req_url + split_joint + req_method + split_joint + resp_status_code + split_joint \
+                      + spend_time_str + split_joint + original_data_str + split_joint + get_mock_data_str
+            req_url_len = len(req_url)
+            req_method_len = len(req_method)
+            resp_status_code_len = len(resp_status_code)
+            spend_time_str_len = len(spend_time_str)
+            original_data_str_len = len(original_data_str)
+            get_mock_data_str_len = len(get_mock_data_str)
+            content["param_len"] = [req_url_len, req_method_len, resp_status_code_len, spend_time_str_len,
+                                        original_data_str_len, get_mock_data_str_len]
+            content["param_value"]=param_value
 
+            ctx.log.info("========================== write data to file==========================")
 
-
-
-
+            write_file(save_log_file, str(content), is_cover=False)
