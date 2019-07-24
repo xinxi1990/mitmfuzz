@@ -200,7 +200,6 @@ def edit_dict(expr, new_value, json_data):
     # 解析表达式为正则表达式
     parse_json(json_data, data_struct_link)
     re_pattern = ''
-
     for sub_expr in expr.split('.'):
         re_pattern += parse_sub_expr(sub_expr)
     logger.log_debug('\n元素路径jsonpath表达式为：%s' % expr)
