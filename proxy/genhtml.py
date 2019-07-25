@@ -8,9 +8,11 @@
 """
 
 import os, time, sys, json
+
 sys.path.append('..')
 from jinja2 import Environment, PackageLoader
 from deepdiff import DeepDiff
+import logger
 
 
 class Create():
@@ -31,7 +33,7 @@ class Create():
         try:
             env = Environment(loader=PackageLoader('proxy', 'templates'))
             template = env.get_template("template.html")
-            records = Create.gen_data(self.log_path)
+            records = self.gen_data(self.log_path)
             html_content = template.render(html_report_name="测试报告", records=records)
             with open(report_path, "wb") as f:
                 f.write(html_content.encode("utf-8"))
@@ -43,19 +45,20 @@ class Create():
 
     @staticmethod
     def gen_data(file_path):
-        '''
+        """
         组装数据
-        :return:
-        '''
+        :param file_path: 存有接口响应数据的相关日志
+        :return:原始接口数据和Mock接口数据之间的差异
+        """
         records = []
         with open(file_path, encoding='utf-8') as f_r:
-            i=0
+            i = 0
             for line in f_r.readlines():
-                i=i+1
-                print('line:',line)
-                print('line[0]:',line[0])
-                if line[0]!='{':
-                    line_json = eval(line[1:])  #第一行第一个可能有个特殊字符
+                i = i + 1
+                print('line:', line)
+                print('line[0]:', line[0])
+                if line[0] != '{':
+                    line_json = eval(line[1:])  # 第一行第一个可能有个特殊字符
                 else:
                     line_json = eval(line)
                 param_len = line_json['param_len']
@@ -82,8 +85,11 @@ class Create():
                 data['intercept'] = json.dumps(eval(data_intercept_str), indent=4)
                 # diff_data = diff(eval(item[2]),eval(item[3]))
                 diff_data = DeepDiff(eval(data_original_str), eval(data_intercept_str), ignore_order=True)
-                data['diff'] = diff_data
-                records.append(data)
+                if len(diff_data)!=0:
+                    data['diff'] = diff_data
+                    records.append(data)
+                else:
+                    logger.log_info("mock的字段的值刚好与原字段的这个值相等")
         return records
 
 
