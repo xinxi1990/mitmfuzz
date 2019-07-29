@@ -273,7 +273,6 @@ def del_dict(expr, json_data):
                 pass
         else:
             del json_data[del_key]
-    #logger.log_debug('重新生成的新json数据:\n{}'.format(json_data))
     return json_data
 
 
