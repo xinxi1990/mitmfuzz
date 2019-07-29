@@ -18,23 +18,23 @@ data_struct_list = []  # 用于存放所有 json 元素路径，形如 json_data
 data_struct_link = 'json_data'  # 用于临时存放单条json 元素路径(的一部分)
 
 
-def modify_deep_dict(new_value, json_path, json_dict):
-    if "." in json_path:
-        json_path_list = []
-        for path in str(json_path).split("."):
-            if "[" and "]" in path:
-                value_1 = path.split('[')[0]
-                value_2 = path.split('[')[1].replace(']', '')
-                json_path_list.append(value_1)
-                json_path_list.append(int(value_2))
-            else:
-                json_path_list.append(path)
-        for path_str in json_path_list:
-            get_dict(path_str, json_dict)
-    else:
-        json_dict[json_path] = new_value
-        dict(json_dict).update()
-    return json_dict
+# def modify_deep_dict(new_value, json_path, json_dict):
+#     if "." in json_path:
+#         json_path_list = []
+#         for path in str(json_path).split("."):
+#             if "[" and "]" in path:
+#                 value_1 = path.split('[')[0]
+#                 value_2 = path.split('[')[1].replace(']', '')
+#                 json_path_list.append(value_1)
+#                 json_path_list.append(int(value_2))
+#             else:
+#                 json_path_list.append(path)
+#         for path_str in json_path_list:
+#             get_dict(path_str, json_dict)
+#     else:
+#         json_dict[json_path] = new_value
+#         dict(json_dict).update()
+#     return json_dict
 
 
 def get_dict_value(new_value, json_path_list, json_dict):
@@ -161,9 +161,10 @@ def parse_json(json_data, data_struct_link):
     '''
     递归解析json数据结构，存储元素的路径
     :param json_data:原始的接口数据
-    :param data_struct_link:
+    :param data_struct_link:各字段的层级
     :return:
     '''
+    #logger.log_info('\nparse_json中data_struct_link:'.format(data_struct_link))
     if type(json_data) == type({}):  # 字典类型
         keys_list = json_data.keys()
         for key in keys_list:
@@ -171,6 +172,8 @@ def parse_json(json_data, data_struct_link):
             if type(json_data[key]) not in [type({}), type([])]:  # key对应的value值既不是数组，也不是字典
                 data_struct_list.append(temp_data_struct_link)
             else:
+                #print('json_data[key]:  ',json_data[key])
+                #logger.log_info('\nparse_json中temp_data_struct_link:'.format(temp_data_struct_link))
                 parse_json(json_data[key], temp_data_struct_link)
     elif type(json_data) == type([]):  # 数组类型
         array_length = len(json_data)
@@ -184,11 +187,14 @@ def parse_json(json_data, data_struct_link):
                         data_struct_list.append(temp_data_struct_link)
                     else:
                         parse_json(temp_json_data[key], temp_data_struct_link)
+            else:
+                pass
+                #logger.log_info('\n其他类型暂不处理')
 
 def edit_dict(expr, new_value, json_data):
     """
     修改更改键的值
-    :param expr: 响应中的某个字段
+    :param expr: 响应中的某个字段(随机选的)
     :param new_value:随机值
     :param json_data:原始的接口响应值
     :return:mock后的接口响应值
@@ -234,7 +240,8 @@ def del_dict(expr, json_data):
     删除键的值
     :return:
     '''
-    logger.log_debug('执行del_dict方法')
+    #logger.log_debug('执行del_dict方法')
+    print('执行del_dict方法')
     expr_path = expr.split(".")
     del_key = expr_path[-1]
     expr = expr.replace("." + del_key, '')
@@ -256,13 +263,17 @@ def del_dict(expr, json_data):
     # 通过匹配提取的目标结果，操作json串
     for item in target_set:
         target = eval(item)
-        if type(target) == type({}):  # 如果为字典
-            logger.log_debug("删除键:" + del_key)
-            del target[del_key]
-        elif type(target) == type([]):
-            # 暂不实现
-            pass
-    logger.log_debug('重新生成的新json数据:\n{}'.format(json_data))
+        if len(target) != 0:
+            if type(target) == type({}):  # 如果为字典
+                # logger.log_debug("删除键:" + del_key)
+                print('删除键:', del_key)
+                del target[del_key]
+            elif type(target) == type([]):
+                # 暂不实现
+                pass
+        else:
+            del json_data[del_key]
+    #logger.log_debug('重新生成的新json数据:\n{}'.format(json_data))
     return json_data
 
 
