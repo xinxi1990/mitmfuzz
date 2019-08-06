@@ -133,7 +133,8 @@
   <h2>Details</h2>
   <table id="details">
     <tr>
-      <th>Name</th>
+      <th>Url Name</th>
+      <th>Url Method</th>
       <th>Status</th>
       <th>Response Time</th>
       <th>Detail</th>
@@ -141,7 +142,8 @@
     {% for record in records %}
       <tr>
         <th class="{{record.name}}" style="width:5em;">{{record.name}}</td>
-        <td>{{record.status}}</td>
+        <td style="text-align:center;width:6em;">{{record.method}}</td>
+        <td style="text-align:center;width:6em;">{{record.status}}</td>
         <td style="text-align:center;width:6em;">{{ '%0.1f'| format(record.response_time_ms|float) }} ms</td>
         <td class="detail">
             <a class="button" href="#popup_log_{{loop.index}}">data</a>
