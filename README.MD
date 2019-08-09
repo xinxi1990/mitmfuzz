@@ -53,7 +53,10 @@ pip3 install colorlog
 ### 执行mock数据
 ```angularjs
 mitmdump -s proxyserver.py
+或者
+mitmweb -s proxyserver.py
 ```
+
 
 ### 生成报告
 ```angularjs
